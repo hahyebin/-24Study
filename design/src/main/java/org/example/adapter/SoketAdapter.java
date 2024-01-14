@@ -1,4 +1,4 @@
-package org.example.adapter;
+package main.java.org.example.adapter;
 
 public class SoketAdapter implements Electronic110V {
 

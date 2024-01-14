@@ -1,7 +1,7 @@
-package org.example.aop;
+package main.java.org.example.aop;
 
-import org.example.proxy.Html;
-import org.example.proxy.IBrowser;
+import main.java.org.example.proxy.Html;
+import main.java.org.example.proxy.IBrowser;
 
 public class AopBrowser implements IBrowser {
 

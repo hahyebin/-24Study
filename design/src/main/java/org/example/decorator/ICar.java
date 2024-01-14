@@ -1,4 +1,4 @@
-package org.example.decorator;
+package main.java.org.example.decorator;
 
 public interface ICar {
     int getPrice();

@@ -1,31 +1,30 @@
-package org.example;
 
-import org.example.adapter.*;
-import org.example.aop.AopBrowser;
-import org.example.decorator.*;
-import org.example.facade.Ftp;
-import org.example.facade.Reader;
-import org.example.facade.SftpClient;
-import org.example.facade.Writer;
-import org.example.observer.Button;
-import org.example.observer.IButtonListener;
-import org.example.proxy.Browser;
-import org.example.proxy.BrowserProxy;
-import org.example.proxy.Html;
-import org.example.proxy.IBrowser;
-import org.example.singleton.AClazz;
-import org.example.singleton.BClazz;
-import org.example.singleton.SoketClient;
-import org.example.strategy.*;
+import main.java.org.example.adapter.*;
+import main.java.org.example.strategy.*;
+import main.java.org.example.aop.AopBrowser;
+
+import main.java.org.example.facade.Ftp;
+import main.java.org.example.facade.Reader;
+import main.java.org.example.facade.SftpClient;
+import main.java.org.example.facade.Writer;
+import main.java.org.example.observer.Button;
+import main.java.org.example.observer.IButtonListener;
+import main.java.org.example.proxy.Browser;
+import main.java.org.example.proxy.BrowserProxy;
+import main.java.org.example.proxy.Html;
+import main.java.org.example.proxy.IBrowser;
+import main.java.org.example.singleton.AClazz;
+import main.java.org.example.singleton.BClazz;
+import main.java.org.example.singleton.SoketClient;
 
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Main {
     public static void main(String[] args) {
 
-
-        /*
+/*
            ---- <Singleton pattern>
+
         AClazz aClazz = new AClazz();
         BClazz bClazz = new BClazz();
 
@@ -33,10 +32,14 @@ public class Main {
         SoketClient bClient = bClazz.getSoketClient();
 
         System.out.println("싱글톤 객체 동일?");
-        System.out.println(aClient.equals(bClient));*/
+        System.out.println(aClient.equals(bClient));
+ */
+
+
 
 
  /*     -------  <Adapter pattern >
+
         HairDryer hairDryer = new HairDryer();
         connect(hairDryer);
 
@@ -47,11 +50,12 @@ public class Main {
         AirConditional airConditional = new AirConditional();
         Electronic110V adapter2 = new SoketAdapter(airConditional);
        connect(adapter2); // adapter를 통해 220V --> 110V 로 변환
-       */
+  */
 
 
-        //-------- <proxy pattern >
-       /* 1. Proxy > no adapt
+
+/*       //-------- <proxy pattern >
+         1. Proxy > no adapt
         Browser browser = new Browser("www.naver.com");
         browser.show();
         browser.show();
@@ -100,7 +104,8 @@ public class Main {
 */
 
 
-       /* // ------  <decorator pattern>
+/*
+        // ------  <decorator pattern>
         // ** 기존 뼈대(클래스)는 유지하되, 이후 필요한 형태로 꾸밀 때 사용한다. 확장시 유용
         // ** ex. 뼈대 : 에스프레소  + 확장 - 우유추가시 : 라떼, 물추가시 : 아메리카노 etc,,,,
 
@@ -116,10 +121,10 @@ public class Main {
 
         ICar a5 = new A5(iCar, "A5");
         a5.showPrice();
-        */
+*/
 
 
-        /* --------< Observer pattern >
+ /*     --------< Observer pattern >
         변화가 일어 났을 때, 미리 등록된 다른 클래스에 통보해주는 패턴
         ex. 선생님 오실 때 '망을 보는 학생'
 
@@ -137,9 +142,11 @@ public class Main {
         button.click("msg 전달 3");
         button.click("msg 전달 4");
     }
-      */
 
-        /*
+*/
+
+
+/*
         // ---- <Facade pattern>
         // 여러 개의 객체와 실제 사용하는 서브 객체의 사이에 복잡한 의존관계가 있을때
         // 중간에 facade라는 객체를 두고, 여기서 제공하는 인터페이스만을 활용하여 기능 사용하는 방식
@@ -165,14 +172,14 @@ public class Main {
         sftpClient.writer();
         sftpClient.read();
         sftpClient.disConnect();
-        */
+*/
 
-        /*
+/*
           ----- < Strategy pattern >
           전략 메서드를 가진 전랙 객체(Normal Stratege, Base64 )
           전략 객체를 사용하는 컨텍스트
           전략 객체를 생성해 컨텍스트에 주입하는  클라이언트
-*/
+
         Encoder encoder = new Encoder();
 
         EncodingStrategy base64 = new Base64Strategy();
@@ -199,7 +206,7 @@ public class Main {
         System.out.println(encoder.getMsg(msg));
 
 
-
+ */
     }
 
 

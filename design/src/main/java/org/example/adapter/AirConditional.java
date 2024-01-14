@@ -1,6 +1,6 @@
-package org.example.adapter;
+package main.java.org.example.adapter;
 
-public class AirConditional implements Electronic220V{
+public class AirConditional implements Electronic220V {
     
 
     @Override

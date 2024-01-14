@@ -1,4 +1,6 @@
-package org.example.facade;
+package main.java.org.example.facade;
+
+import main.java.org.example.facade.Ftp;
 
 public class SftpClient {
 

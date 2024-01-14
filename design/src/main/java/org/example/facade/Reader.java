@@ -1,4 +1,4 @@
-package org.example.facade;
+package main.java.org.example.facade;
 
 public class Reader {
     // 파일 읽음

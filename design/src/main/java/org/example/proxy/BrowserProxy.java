@@ -1,4 +1,4 @@
-package org.example.proxy;
+package main.java.org.example.proxy;
 
 public class BrowserProxy implements IBrowser {
 

@@ -1,4 +1,4 @@
-package org.example.strategy;
+package main.java.org.example.strategy;
 
 public class NormalStrategy implements EncodingStrategy {
 

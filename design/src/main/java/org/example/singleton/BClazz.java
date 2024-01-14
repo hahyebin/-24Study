@@ -1,4 +1,4 @@
-package org.example.singleton;
+package main.java.org.example.singleton;
 
 public class BClazz {
 

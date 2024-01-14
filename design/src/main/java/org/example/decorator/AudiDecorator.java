@@ -1,8 +1,8 @@
-package org.example.decorator;
+package main.java.org.example.decorator;
 
 import javax.swing.*;
 
-public class AudiDecorator implements ICar{
+public class AudiDecorator implements ICar {
 
     protected ICar audi;
     protected String modelname;
